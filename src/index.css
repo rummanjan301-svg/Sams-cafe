@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Outfit', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --color-brand-black: #0B0B0B;
+  --color-brand-charcoal: #151515;
+  --color-brand-surface: #1A1A1A;
+  --color-brand-surface-elevated: #242424;
+  --color-brand-border: #2E2E2E;
+  --color-brand-yellow: #FFC928;
+  --color-brand-amber: #E5A900;
+  --color-brand-cream: #F5F2EA;
+  --color-brand-grey: #A6A6A6;
+  --color-brand-red: #D62828;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+::-webkit-scrollbar-thumb {
+  background: #242424;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFC928;
+}
+
+/* Base Body and Text styling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #0B0B0B;
+  color: #F5F2EA;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Accessibility focus-visible styles */
+:focus-visible {
+  outline: 2px solid #FFC928;
+  outline-offset: 2px;
+}
+
+/* Stable Header hardware acceleration & compositing */
+header {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

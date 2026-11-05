@@ -1,0 +1,6 @@
+{
+  "name": "Sam's Cafe – Mian Channu",
+  "description": "Premium restaurant and cafe on Allama Iqbal Road, Mian Channu. Artisanal pizzas, gourmet burgers, crispy wings, specialty coffee, and online ordering via WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
